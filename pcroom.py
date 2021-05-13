@@ -71,8 +71,14 @@ def pcroom():
                         overamount_m = abs(savetime_m) * (1000 / 60)
                         savetime_h -= 1
 
+                        i['time_h'] = savetime_h
+                        i['time_m'] = savetime_m
+
                     elif savetime_m == 0:
                         overamount_m = abs(savetime_m) * (1000 / 60)
+
+                        i['time_h'] = savetime_h
+                        i['time_m'] = savetime_m
 
                     elif savetime_m > 0:
                         if savetime_m >= 60:
@@ -82,10 +88,15 @@ def pcroom():
 
                     overamount_h = 1000 * abs(savetime_h)
 
+                    i['time_h'] = savetime_h
+                    i['time_m'] = savetime_m
+
                     print(f'초과 금액 : {-int(overamount_h) - int(overamount_m)} 원')
                     print(f'적립된 시간 : {savetime_h} 시 {savetime_m} 분')
 
-                    # 리스트안에 딕셔너리  쓸때 값 변경 법 모르겠음
+                    print(i)
+
+
 
                 elif savetime_h <= 0:
                     savetime_m = i.get('time_m') - usetime_m
@@ -158,7 +169,7 @@ def pcroom():
                     print(f'초과 금액 : {-int(overamount_h) - int(overamount_m)} 원')
                     print(f'적립된 시간 : {savetime_h} 시 {savetime_m} 분')
 
-                    # 리스트안에 딕셔너리  쓸때 값 변경 법 모르겠음
+
 
                 elif savetime_h <= 0:
                     savetime_m = i.get('time_m') - usetime_m
