@@ -10,7 +10,7 @@ def attendance():
 
         YN1 = input('일어남? (Y/N) : ')
         if YN1 == 'Y' :
-            print('일어남')
+            print('')
         else :
             print('10분뒤 알람')
 
