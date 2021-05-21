@@ -216,12 +216,18 @@ def Movie():
 
             print()
 
-            print('남은 좌석 및 가격')
+            print('남은 좌석 및 가격(커플석은 2인만 가능)')
             Seat_Search(movieNo=time_choice, movieName=movie_choice)
             Seat_Price()
 
-            print('S : 1, A : 2, B : 3, Couple : 4')
-            seat_choice = input('좌석 선택 : ')
+            if persons == 2 :
+                print('S : 1, A : 2, B : 3, Couple : 4')
+                seat_choice = input('좌석 선택 : ')
+                Seat_Choice(seatNo=seat_choice, seat_choice)
+
+            else :
+                print('S : 1, A : 2, B : 3')
+                seat_choice = input('좌석 선택 : ')
 
         else:
             continue
