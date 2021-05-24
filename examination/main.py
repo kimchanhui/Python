@@ -1,11 +1,11 @@
 list = []
 
-user_txt1 = open('C:/Users/DOONA/PycharmProjects/Python/김찬희_중간고사/user.txt', 'r')
+user_txt1 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user.txt', 'r')
 line1 = user_txt1.readline()
 list1 = line1
 user_txt1.close()
 
-user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/김찬희_중간고사/user2.txt', 'r')
+user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'r')
 
 while True :
     line2 = user_txt2.readline()
@@ -58,12 +58,12 @@ def user_info(userid, userpw) :
 
 p_list = []
 
-prod_txt1 = open('C:/Users/DOONA/PycharmProjects/Python/김찬희_중간고사/product.txt', 'r')
+prod_txt1 = open('C:/Users/DOONA/PycharmProjects/Python/examination/product.txt', 'r')
 p_line1 = prod_txt1.readline()
 p_list1 = p_line1
 prod_txt1.close()
 
-prod_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/김찬희_중간고사/product2.txt', 'r')
+prod_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/product2.txt', 'r')
 
 while True :
     p_line2 = prod_txt2.readline()
