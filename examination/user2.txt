@@ -1,0 +1,2 @@
+1 john admin admin 0
+2 marry admin1 admin1 0
