@@ -16,6 +16,20 @@ while True :
     list.append(dic)
 user_txt2.close()
 
+#===================================
+#===================================
+
+def signup() :
+    user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'a')
+
+    name = input('이름 : ')
+    id = input('아이디 : ')
+    pw = input(('패스워드 : '))
+
+    data = (f'\n{name} {id} {pw} 0')
+    user_txt2.write(data)
+
+    user_txt2.close()
 
 #===================================
 #===================================
@@ -50,4 +64,9 @@ def user_info(username) :
             print('이름 :' ,i.get('user_name'))
             print('마일리지 :' ,i.get('mileage'))
 
+
+
+
     print()
+
+

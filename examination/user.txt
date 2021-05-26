@@ -1,1 +1,1 @@
-user_no user_name id pw mileage
+user_name id pw mileage

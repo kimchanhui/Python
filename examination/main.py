@@ -8,7 +8,7 @@ def receipt():
 if __name__ == '__main__' :
     command = ''
     while command != 'exit' :
-        print('Command ( shopping ), ( login ), ( exit )')
+        print('Command ( shopping ), ( login ), (  signup  ), ( exit )')
         command = input()
         if command == 'shopping' :
             product_info()
@@ -34,6 +34,9 @@ if __name__ == '__main__' :
                     else :
                         print('없는 커맨드 입니다.')
                         print()
+
+        elif command == 'signup' :
+            signup()
 
         else:
             print('없는 커맨드 입니다.')
