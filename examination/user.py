@@ -11,10 +11,13 @@ def signup() :
     id = input('아이디 : ')
     pw = input(('패스워드 : '))
 
-    data = (f'\n{name} {id} {pw} 0')
+    data = (f'{name} {id} {pw} 0\n')
     user_txt2.write(data)
 
     user_txt2.close()
+
+    print('생성 완료')
+    print()
 
 #===================================
 #===================================
@@ -53,9 +56,6 @@ def user_info(username) :
             print('이름 :' ,name)
             print('마일리지 :' ,mileage)
             print()
-
-            user_info.name = name
-            user_info.milage = mileage
     print()
 
 

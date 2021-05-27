@@ -10,7 +10,11 @@ if __name__ == '__main__' :
         if command == 'shopping' :
             product_info()
 
-            product_purchase()
+            user = 'None'
+
+            total, quantity, price, p_name = product_purchase()
+
+            receipt(user_name=user, total=total, quantity=quantity, price=price, p_name=p_name)
 
         elif command == 'login' :
             user = login()

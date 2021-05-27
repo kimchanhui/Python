@@ -1,3 +1,2 @@
-john admin admin 0
-marry admin1 admin1 0
-aaa aaa aaa 0
+a a a 0
+a a a 120
