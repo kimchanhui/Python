@@ -60,9 +60,6 @@ def receipt(user_name,total, quantity, price, p_name) :
             print('마일리지 :', int(add_mileage))
 
 
-
-
-
         user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'r+')
 
         while True:
@@ -77,11 +74,7 @@ def receipt(user_name,total, quantity, price, p_name) :
 
         user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'w')
 
-
         user_txt2.write(data1)
-
-
-
 
         user_txt2.close()
 
