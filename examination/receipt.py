@@ -43,44 +43,51 @@ def receipt(user_name,total, quantity, price, p_name) :
 
 
     add_mileage += int(add_mile)
-
-    data = (f'{user_name} {date} {p_name} {total} {quantity} {int(add_mile)} {int(add_mileage)}\n')
-    receipt_txt2.write(data)
+    if total != 0 :
+        data = (f'{user_name} {date} {p_name} {total} {quantity} {int(add_mile)} {int(add_mileage)}\n')
+        receipt_txt2.write(data)
 
     receipt_txt2.close()
-
-    print('---영수증---')
-    print('구매자 :', user_name)
-    print('구매 날짜 :', date)
-    print('상품명 :', p_name)
-    print('가격 :', total, '원')
-    print('수량 :', quantity, '개')
     if user_name != 'None' :
-        print('적립될 마일리지 :', int(add_mile))
-        print('마일리지 :', int(add_mileage))
+        print('---영수증---')
+        print('구매자 :', user_name)
+        print('구매 날짜 :', date)
+        print('상품명 :', p_name)
+        print('가격 :', total, '원')
+        print('수량 :', quantity, '개')
+        if user_name != 'None' :
+            print('적립될 마일리지 :', int(add_mile))
+            print('마일리지 :', int(add_mileage))
 
 
 
-    user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'r+')
-
-    while True:
-        line2 = user_txt2.readline()
-        if user_name in line2:
-            line5 = ('\n')
-            line4 = line2.replace(str(mileage), str(add_mileage))
-            user_txt2.write(line5)
-            user_txt2.write(line4)
-            break
-    user_txt2.close()
 
 
-    user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'r+')
-    while True:
-        line3 = user_txt2.readline()
-        if line2 == line3 :
-            user_txt2.write()
-            break
-    user_txt2.close()
+        user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'r+')
+
+        while True:
+            line2 = user_txt2.readline()
+            if user_name in line2:
+                break
+
+        user_txt2.close()
+
+        data1 = line2.replace(str(mileage), str(add_mileage))
+        data2 = '\n'
+
+        user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'w')
+
+
+        user_txt2.write(data1)
+
+
+
+
+        user_txt2.close()
+
+
+
+
 
 
 

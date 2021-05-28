@@ -20,6 +20,9 @@ def product_purchase() :
         print('Command ( product_no ), ( exit )')
         command2 = input()
 
+        null = 0
+        null2 = ''
+
         for i in p_list :
             i
             if command2 == i.get('no') :
@@ -28,10 +31,19 @@ def product_purchase() :
                 check = 1
                 break
 
-        if check != 1:
+
+        if command2 == 'exit' :
+            print('처음으로 돌아갑니다.')
+            print()
+            return null, null, null, null2
+            break
+
+        elif check != 1:
             print('없는 상품입니다.')
             print('상품 선택으로 돌아갑니다.')
             print()
+
+
 
         elif check == 1:
             YN = input()
@@ -56,6 +68,8 @@ def product_purchase() :
                 print('없는 커맨드입니다.')
                 print('상품 선택으로 돌아갑니다.')
                 print()
+
+
 
 
                 # =============================

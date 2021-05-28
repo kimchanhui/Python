@@ -11,7 +11,7 @@ def signup() :
     id = input('아이디 : ')
     pw = input(('패스워드 : '))
 
-    data = (f'{name} {id} {pw} 0\n')
+    data = (f'\n{name} {id} {pw} 0')
     user_txt2.write(data)
 
     user_txt2.close()
