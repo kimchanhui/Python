@@ -64,7 +64,11 @@ def receipt(user_name,total, quantity, price, p_name) :
 
         while True:
             line2 = user_txt2.readline()
+            user_txt2.write(line2)
             if user_name in line2:
+                user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'w')
+
+                user_txt2.close()
                 break
 
         user_txt2.close()
@@ -72,10 +76,11 @@ def receipt(user_name,total, quantity, price, p_name) :
         data1 = line2.replace(str(mileage), str(add_mileage))
         data2 = '\n'
 
-        user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txt', 'w')
+
+        user_txt2 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user2.txwt', 'a')
+
 
         user_txt2.write(data1)
-
         user_txt2.close()
 
 
