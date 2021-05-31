@@ -1,3 +1,4 @@
+
 list = []
 
 user_txt1 = open('C:/Users/DOONA/PycharmProjects/Python/examination/user.txt', 'r')
