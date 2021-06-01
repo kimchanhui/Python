@@ -223,7 +223,7 @@ def Movie():
             if persons == 2 :
                 print('S : 1, A : 2, B : 3, Couple : 4')
                 seat_choice = input('좌석 선택 : ')
-                Seat_Choice(seatNo=seat_choice, seat_choice)
+                Seat_Choice(seatNo=seat_choice)
 
             else :
                 print('S : 1, A : 2, B : 3')
